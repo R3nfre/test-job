@@ -11,7 +11,7 @@ class GroupUserObserver
     /**
      * Handle the GroupUser "saving" event.
      *
-     * @param  \App\Models\GroupUser  $groupUser
+     * @param \App\Models\GroupUser $groupUser
      * @return void
      */
     public function saving(GroupUser $groupUser)

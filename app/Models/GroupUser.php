@@ -2,9 +2,7 @@
 
 namespace App\Models;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class GroupUser extends Model
@@ -22,7 +20,8 @@ class GroupUser extends Model
 
     public $incrementing = false;
     protected $fillable = [
-        'user_id', 'group_id'
+        'user_id',
+        'group_id'
     ];
     public $timestamps = false;
 

@@ -40,8 +40,8 @@ class CheckExpiretion extends Command
     public function handle()
     {
         $users = GroupUser::all();
-        foreach ($users as $user){
-            if($user->expired_at < Carbon::now()){
+        foreach ($users as $user) {
+            if ($user->expired_at < Carbon::now()) {
                 $user->delete();
             }
         }
